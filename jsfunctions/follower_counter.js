@@ -15,3 +15,9 @@ const checkCountValue = () => {
         alert("Your Instagram post gained 20 followers! Keep it up!")
     }
 }
+
+document.querySelector("#reset").addEventListener("click", () => {
+    count = 0;
+    countDisplay.innerHTML = count;
+    alert("Followers has been reset")
+})
