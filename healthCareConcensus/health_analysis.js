@@ -79,14 +79,23 @@ const search = () => {
     fetch('health_analysis.json')
         .then(response => response.json())
         .then(data => {
-            const condition = data.conditions.find(item => item.name.toLowerCase() === input)
+            const condition = data.conditions.find(item => item.name.toLowerCase() === input);
+
+
+            if (condition) {
+                console.log(condition)
+                resultDiv.innerHTML = `
+                    <h2>${condition.name}</h2>
+                    <img src="images/${condition.imagesrc}"/>
+                `;
+            } else {
+                resultDiv.innerHTML = "Results not found"
+            }
+
         })
-
-    displayHTML()
-}
-
-const displayHTML = () => {
-    console.log(condition)
+        .catch(error => {
+            resultDiv = "Results not found"
+        })
 }
 
 addPatientBtn.addEventListener("click", addPatients)
