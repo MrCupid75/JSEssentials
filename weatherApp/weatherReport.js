@@ -17,6 +17,10 @@ const showWeatherDetails = (event) => {
                                     <p>Temperature: ${data.main.temp} &#8451;</p>
                                     <p>Weather: ${data.weather[0].description}</p>
                 `
+        }).catch(error => {
+            console.log("Erro fetching weather:", error);
+            const weatherInfo = document.querySelector("#weatherInfo")
+            weatherInfo.innerHTML = `<p>Failed to fetch weather. Please try again.</p>`;
         })
 }
 
