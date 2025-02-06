@@ -65,6 +65,49 @@ nav svg {
   border-bottom: 1px solid #fff;
 }
 
+.searchArea-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 19px;
+
+  background-color: var(--background-color);
+  padding: 5px 25px;
+
+  border-radius: 25px;
+}
+
+.searchArea-container input {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: var(--background-color);
+
+  font-size: 12px;
+  color: var(--secondary-color);
+  letter-spacing: 2px;
+}
+
+.searchArea-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: var(--secondary-color);
+  color: var(--text-color);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.searchArea-container button:hover {
+  transition: background 1s;
+  background: #034159;
+}
+
 /* HEADER */
 .header {
   background-image: linear-gradient(
@@ -80,18 +123,20 @@ nav svg {
   position: relative;
 }
 
-.header-content {
-  position: absolute;
-  top: 8%;
-  left: 200px;
-  width: 70%;
+.contact_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
 }
 
-.header .query-text {
-  position: absolute;
-  right: 100px;
-  top: 20px;
-  color: var(--text-color);
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 50%;
 }
 
 .header-content h1 {
@@ -104,9 +149,6 @@ nav svg {
 .header-content p {
   color: var(--text-color);
   font-size: 14px;
-
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
 }
 
 .header .social-media::before {
@@ -132,60 +174,54 @@ nav svg {
   width: 30px;
 }
 
-/* OUR TEAM */
-.our-team {
-  display: flex;
-  align-items: center;
-
-  position: absolute;
-  top: 400px;
-  left: 200px;
-
-  gap: 100px;
-}
-
-.our-team h1 {
-  font-size: 3.5rem;
-  font-weight: 900;
-  color: var(--text-color);
-}
-
-.team_profile {
-  display: flex;
-  gap: 50px;
-}
-
-.profile_card {
-  background-color: rgba(0, 0, 0, 0.5);
+.contact_form {
+  width: 30%;
+  background-color: rgba(0, 0, 0, 0.346);
   padding: 20px;
   border-radius: 10px;
+}
 
+.contact_form form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
+  gap: 20px;
 
-.profile_card .position {
-  background-color: var(--secondary-color);
-  border-radius: 20px;
-  padding: 5px 10px;
-  border: 2px solid white;
-  text-align: center;
-  margin-top: 7px;
-
-  width: 80%;
-}
-
-.profile_card svg {
-  width: 30px;
-  translate: 30px;
-
-  background-color: var(--secondary-color);
-  border-radius: 30px;
-  padding: 5px;
-}
-
-.profile_card p {
   color: var(--text-color);
-  font-size: 14px;
+}
+
+.contact_form form input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.346);
+
+  font-size: 12px;
+  color: var(--secondary-color);
+  letter-spacing: 2px;
+}
+
+.contact_form form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.346);
+
+  font-size: 12px;
+  color: var(--secondary-color);
+  letter-spacing: 2px;
+}
+
+.contact_form form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: var(--secondary-color);
+  color: var(--text-color);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
 }

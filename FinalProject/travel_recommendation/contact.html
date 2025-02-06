@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travel Recommendation</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css" />
   </head>
   <body>
     <!-- NAVIGATION -->
@@ -22,34 +22,31 @@
         <a href="about_us.html">About Us</a>
         <a href="contact.html">Contact Us</a>
       </div>
-      <div class="searchArea-container">
-        <input type="text" placeholder="Enter a destination" />
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-          <path
-            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
-          />
-        </svg>
-        <button>Search</button>
-        <button>Clear</button>
-      </div>
     </nav>
 
     <!-- HEADER SECTION -->
     <section class="header">
-      <p class="query-text">Please enter a valid search query</p>
-      <div class="header-content">
-        <h1>
-          EXPLORE <br />
-          DREAM <br />
-          DESTINATION
-        </h1>
-        <p>
-          Your one-stop destination for all your travel needs. Find the best
-          places to visit, stay, and eat at your favorite destinations. Plan
-          your next trip with us. Discover hidden gems, local cuisines, and
-          top-rated accommodations to make your journey unforgettable.
-        </p>
-        <button>BOOK NOW</button>
+      <div class="contact_container">
+        <div class="header-content">
+          <h1>CONTACT US</h1>
+          <p>Get in touch</p>
+        </div>
+        <div class="contact_form">
+          <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="John Doe" />
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="johndoe@gmail.com" />
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              placeholder="Enter your message here"
+              rows="5"
+              cols="50"
+            ></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
       </div>
       <div class="social-media">
         <a href=""
