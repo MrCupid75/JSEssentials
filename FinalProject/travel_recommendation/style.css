@@ -123,6 +123,50 @@ nav svg {
   position: relative;
 }
 
+.search_results {
+  width: 500px;
+
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.search_card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.search_card img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+}
+
+.search_card h6 {
+  font-size: 16px;
+  margin-left: 15px;
+}
+
+.search_card p {
+  margin-left: 15px;
+}
+
+.search_card button {
+  margin-bottom: 20px;
+  width: 100px;
+  padding: 5px 10px;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
 .header-content {
   position: absolute;
   top: 10%;

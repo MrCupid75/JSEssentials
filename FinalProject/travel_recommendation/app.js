@@ -1,0 +1,1 @@
+const searchInputElement = document.querySelector("#search-input")
