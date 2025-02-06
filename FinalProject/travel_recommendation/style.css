@@ -159,12 +159,23 @@ nav svg {
   margin-left: 15px;
 }
 
-.search_card button {
+.visit {
   margin-bottom: 20px;
   width: 100px;
   padding: 5px 10px;
   margin-left: 15px;
   margin-top: 20px;
+
+  background: var(--secondary-color);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.visit:hover {
+  transition: background 1s;
+  background: #034159;
+  cursor: pointer;
 }
 
 .header-content {
