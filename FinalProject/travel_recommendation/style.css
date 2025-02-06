@@ -138,10 +138,14 @@ nav svg {
   align-items: center;
   gap: 10px;
 
+  margin-bottom: 20px;
+
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+
+  transition: all 0.9s ease-in-out;
 }
 
 .search_card img {
